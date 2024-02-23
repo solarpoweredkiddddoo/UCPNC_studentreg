@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    overflow: hidden; /* Prevent background image overflow */
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron {
+    background: #337f31; /* Slightly transparent white background for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+    color: #FBFEF9;
+}
+
+.old-english-font {
+    font-family: 'Old Standard TT', serif; /* Old Standard TT font from Google Fonts */
+}
+
+#registerBtn {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #FBFEF9;
+    color: #3b3b3b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8; /* Semi-transparent button */
+}
+
+#registerBtn:hover {
+    opacity: 1;
+}
+
+#backgroundImages {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background images behind other elements */
+}

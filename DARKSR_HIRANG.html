@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>
+        label {
+            color: yellow;
+        }
+
+        body {
+            
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color:  #000000;
+        }
+        .container {
+            padding: 50px;
+            background-color: Universe;
+        }
+        input[type=text], input[type=password], textarea {
+            width: 100%;
+            padding: 15px 20px;
+            margin: 5px 0 ;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f1f1f1;
+        }
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: grey;
+            outline: none;
+        }
+        div {
+            padding: 10px 0;
+        }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style> 
+</head> 
+<body> 
+    <form> 
+        <div class="container"> 
+            <center>  
+		<h1 style="color: yellow;">Student Registration Form</h1>
+            </center> 
+            <hr> 
+            <label> Firstname </label> 
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required> 
+            <label> Middlename: </label> 
+            <input type="text" name="middlename" placeholder="Middlename" size="15" required> 
+            <label> Lastname: </label> 
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required> 
+            <div> 
+                <label> Section : </label> 
+                <select> 
+                    <option value="Section">Section</option> 
+                    <option value="STEM-E">STEM-E</option> 
+                    <option value="STEM-C">STEM-C</option> 
+                    <option value="ABM">ABM</option> 
+                    <option value="HUMSS">HUMSS</option> 
+                </select> 
+            </div> 
+            <div> 
+                <label> Gender : </label> 
+                <br> 
+                <input type="radio" value="Male" name="gender" checked> 
+                <label style="color: yellow;">Male</label> 
+                <input type="radio" value="Female" name="gender"> 
+                <label style="color: yellow;">Female</label> 
+                <input type="radio" value="Other" name="gender"> 
+                <label style="color: yellow;">Other</label> 
+            </div>
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" id="dob" name="dob" placeholder="Enter your DOB" required> 
+        </div> 
+        <div> 
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" placeholder="Enter your email" required> 
+        </div> 
+        <div> 
+            <label for="password">Password:</label> 
+            <input type="password" id="password" name="password" placeholder="Enter your password" pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long"> 
+            <label for="repassword">Re-type Password:</label> 
+            <input type="password" id="repassword" name="repassword" placeholder="Re-Enter your password" required> 
+            <span id="pass"></span>
+        </div> 
+        <div> 
+            <label> Phone : </label> 
+            <label style="color: yellow;"></label> 
+            <input type="text" name="country code " placeholder="+63" size="2"> 
+            <input type="text" name="phone" placeholder="phone no." size="10" required> 
+            <label> Current Address : </label>
+	    <label style="color: yellow;"></label> 
+            <textarea cols="80" rows="5" placeholder="Current Address" value="address" required></textarea> 
+        </div> 
+<div class="wrap"> <button type="submit" onclick="solve()"> Submit </button> 
+    </div>
+    </form> 
+</body>
+</html>

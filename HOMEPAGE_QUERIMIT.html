@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>University of Cabuyao Registration</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts - Old Standard TT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background Images (Slideshow) -->
+    <div id="backgroundImages" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Logo Slot -->
+            <div class="carousel-item active text-center">
+                <img src="images/logo.png" class="mx-auto d-block w-50" alt="University of Cabuyao Logo">
+            </div>
+            <!-- Additional Carousel Slots -->
+            <div class="carousel-item">
+                <img src="images/image1.jpg.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/image2.jpg.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/image3.jpg.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/image4.jpg.jpg" class="d-block w-100" alt="Image 4">
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content" class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4 old-english-font">University of Cabuyao</h1>
+            <p class="lead">Dangal Greetings!</p>
+            <hr class="my-4">
+            <p class="lead">May we ask you to please click the register button to get started</p>
+            <p class="lead">We can't wait to see you here, Future Dangal ng Bayan!</p>
+            <button id="registerBtn" onclick="location.href='LIGHTSR_HIRANG.html'">Register</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom script for fading transition -->
+    <script>
+        $(document).ready(function () {
+            // Add fading transition after 3 seconds
+            setTimeout(function () {
+                $('#backgroundImages').carousel('next');
+            }, 3000);
+        });
+    </script>
+
+</body>
+
+</html>
